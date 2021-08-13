@@ -1,15 +1,19 @@
 import React from "react";
 
-function QNA({ updateAnswer }) {
+function QNA({ updateAnswer, question }) {
+  const options = Object.keys(question.answers);
+  const answers = options.map((option) => {
+    return (
+      <button onClick={() => updateAnswer(option)} key={option}>
+        {question.answers[option].answerText}
+      </button>
+    );
+  });
+
   return (
-    <div className="QNA">
-      <div className="question">What is your favourite colour?</div>
-      <button className="answer" onClick={() => updateAnswer("A")}>
-        Flip the turtle!
-      </button>
-      <button className="answer" onClick={() => updateAnswer("B")}>
-        Flip another turtle!
-      </button>
+    <div>
+      <div>{question.questionText}</div>
+      <div>{answers}</div>
     </div>
   );
 }
