@@ -3,36 +3,36 @@
 		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
 	},
 	"Jekyll": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["wise", "flexible", "old-timey", "patient"]
 	},
 	"Gatsby": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["popular", "proud", "flashy", "ambitious", "imaginative"]
 	},
 	"Next": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["popular", "over-achiever", "friendly"]
 	},
 	"11ty": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["likeable", "free-spirited", "humble"]
 	},
 	"Nuxt": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["complex", "friendly", "loyal"]
 	},
 	"Docusaurus": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["nerdy", "introverted", "nurturing"]
 	},
 	"SvelteKit": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["confident", "unconventional", "courageous"]
 	},
 	"MetalSmith": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["flexible", "people-pleaser", "grungy"]
 	},
 	"Sphinx": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["nerdy", "industrious", "investigative"]
 	},
 	"Tome": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["overlooked", "unconventional"]
 	},
 	"Middleman": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["overlooked", "old-timey", "supportive"]
 	}
 }
