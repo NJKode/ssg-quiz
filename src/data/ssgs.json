@@ -1,0 +1,38 @@
+{
+	"Hugo": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Jekyll": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Gatsby": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Next": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"11ty": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Nuxt": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Docusaurus": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"SvelteKit": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"MetalSmith": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Sphinx": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Tome": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	},
+	"Middleman": {
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+	}
+}
