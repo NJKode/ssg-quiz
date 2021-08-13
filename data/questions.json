@@ -1,0 +1,31 @@
+{
+	"questions": [
+		{
+			"questionText": "Your friends invite you out for drinks on a Friday night, what do you do?",
+			"answers": {
+				"a": {
+					"answerText": "Of course! As long as you choose the bar",
+					"attributes": {
+						"friendly": 1,
+						"stubborn": -1
+					}
+				},
+				"b": {
+					"answerText": "You had other plans but sure, you can adapt",
+					"attributes": {
+						"flexible": 1
+					}
+				},
+				"c": {
+					"answerText": "What friends, I have no friends",
+					"attributes": {
+						"individual": 1
+					}
+				}
+			}
+		},
+		{
+
+		}
+	]
+}
