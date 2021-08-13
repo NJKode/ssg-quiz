@@ -1,17 +1,18 @@
-const ssgs = require('./src/data/ssgs.json');
+const ssgs = require('../data/ssgs.json');
 
 const helpers = {
 	calculateFinalScore: function (attributeScores) {
+		const finalScore = {};
 		Object.keys(ssgs).forEach((ssg) => {
-			ssg.score = 0;
-			ssg.attributes.forEach((ssgAttribute) => {
-				ssgs.score = ssgs.score + (attributeScores[ssgAttribute] || 0);
+			finalScore[ssg] = 0;
+			ssgs[ssg].attributes.forEach((ssgAttribute) => {
+				finalScore[ssg] = finalScore[ssg] + (attributeScores[ssgAttribute] || 0);
 			})
 		})
 
 		// find max score
-		const result = Object.keys(ssgs).reduce((acc, curr) => {
-			return ssgs[curr].score > ssgs[acc].score ? curr : acc
+		const result = Object.keys(finalScore).reduce((acc, curr) => {
+			return finalScore[curr] > (finalScore[acc] || 0) ? curr : acc
 		}, '')
 
 		return result;

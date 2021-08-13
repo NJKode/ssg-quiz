@@ -2,17 +2,31 @@ import { useState } from "react";
 import "./App.css";
 import QNA from "./component/QNA";
 import Header from "./component/Header";
+import Results from './component/Results';
 
 import question from "./data/questions.json";
 
 function App() {
   const questionMax = question.questions.length;
   const [questionNum, setQuestionNum] = useState(0);
-  const [answerChosen, setAnswerChosen] = useState("Z");
+  const [userAttributes, setUserAttributes] = useState({})
 
   function updateAnswer(option) {
-    setAnswerChosen(option);
+
     // Do some calculationg, update the character
+    const questionAttributes = question.questions[questionNum].answers[option].attributes
+
+    const userAttributesCopy = userAttributes;
+    Object.keys(questionAttributes).forEach((attribute) => {
+      userAttributesCopy[attribute] = userAttributesCopy.hasOwnProperty(attribute)
+      ? userAttributesCopy[attribute] + questionAttributes[attribute]
+      : questionAttributes[attribute];
+    });
+    setUserAttributes({
+      ...userAttributes,
+      ...userAttributesCopy })
+
+
     setQuestionNum(questionNum + 1);
   }
 
@@ -27,7 +41,9 @@ function App() {
         />
       )}
 
-      {questionNum === questionMax && <div>Final! You have done it!</div>}
+      {questionNum === questionMax && <Results
+        userAttributes={userAttributes}
+      />}
     </div>
   );
 }
