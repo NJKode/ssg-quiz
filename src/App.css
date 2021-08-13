@@ -7,6 +7,55 @@
   color: #000000;
 }
 
+header {
+  width: 100%;
+  height: 159px;
+  background: #c4c4c4;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.title {
+  text-align: center;
+  padding: 53px 0 18px 0;
+}
+
+.processbar {
+  width: 503px;
+  height: 22px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.processbar-whole {
+  width: 503px;
+  height: 22px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.processbar-fill {
+  width: 155px;
+  height: 22px;
+  background: #363636;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.processbar-text {
+  width: 503px;
+  margin: 0 auto;
+}
+
+.QA {
+  width: 503px;
+  margin: 0 auto;
+}
+
+.QA-question {
+  margin: 52px 0;
+}
+
 .QA-item {
   width: 503px;
   height: 111px;

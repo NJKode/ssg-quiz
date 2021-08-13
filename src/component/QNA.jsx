@@ -18,8 +18,8 @@ function QNA({ updateAnswer, question }) {
   });
 
   return (
-    <div>
-      <div>{question.questionText}</div>
+    <div className="QA">
+      <div className="QA-question">{question.questionText}</div>
       <div>{answers}</div>
     </div>
   );

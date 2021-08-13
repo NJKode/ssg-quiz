@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import QNA from "./QNA";
+import QNA from "./component/QNA";
+import Header from "./component/Header";
 
 import question from "./data/questions.json";
 
@@ -17,6 +18,8 @@ function App() {
 
   return (
     <div className="app">
+      <Header questionNum={questionNum} questionMax={questionMax} />
+
       {questionNum < questionMax && (
         <QNA
           updateAnswer={updateAnswer}
@@ -25,8 +28,6 @@ function App() {
       )}
 
       {questionNum === questionMax && <div>Final! You have done it!</div>}
-
-      <div>This is what you choose {answerChosen}</div>
     </div>
   );
 }
