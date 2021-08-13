@@ -1,25 +1,20 @@
-
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import QNA from "./QNA";
 
 function App() {
-  const[option, setOption] = useState('Z');
+  // Get all data here
+  const [questionNum, setQuestionNum] = useState(0);
+  const [answerChosen, setAnswerChosen] = useState("Z");
 
-  function onButtonClick(opt) {
-    setOption(opt);
+  function updateAnswer(option) {
+    setAnswerChosen(option);
   }
 
   return (
-    <div className="App">
-      <div>What is your favourite colour?</div>
-      <button className="answer" onClick={() => onButtonClick('A')}>
-        Flip the turtle!
-      </button>
-      <button className="answer" onClick={() => onButtonClick('B')}>
-        Flip another turtle!
-      </button>
+    <div>
+      <QNA updateAnswer={updateAnswer} />
 
-      <div>This is what you choose {option}</div>
+      <div>This is what you choose {answerChosen}</div>
     </div>
   );
 }
