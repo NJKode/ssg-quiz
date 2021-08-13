@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 import QNA from "./QNA";
 
 import question from "./data/questions.json";
@@ -15,7 +16,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       {questionNum < questionMax && (
         <QNA
           updateAnswer={updateAnswer}

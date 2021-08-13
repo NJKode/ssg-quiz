@@ -4,8 +4,15 @@ function QNA({ updateAnswer, question }) {
   const options = Object.keys(question.answers);
   const answers = options.map((option) => {
     return (
-      <button onClick={() => updateAnswer(option)} key={option}>
-        {question.answers[option].answerText}
+      <button
+        onClick={() => updateAnswer(option)}
+        key={option}
+        className="QA-item"
+      >
+        <div className="QA-item-option">{option}</div>
+        <div className="QA-item-answer">
+          {question.answers[option].answerText}
+        </div>
       </button>
     );
   });
