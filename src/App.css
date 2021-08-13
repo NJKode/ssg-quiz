@@ -67,6 +67,18 @@ header {
   margin-bottom: 26px;
 }
 
+.QA-item:hover {
+  background: rgba(196, 196, 196, 0.2);
+}
+
+.QA-item:hover .QA-item-option {
+  color: #0500ff;
+}
+
+.QA-item:hover .QA-item-answer {
+  color: #0500ff;
+}
+
 .QA-item-option {
   display: inline-block;
   font-size: 36px;
