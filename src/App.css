@@ -91,3 +91,10 @@ header {
   display: inline-block;
   vertical-align: middle;
 }
+
+.results {
+  width: 503px;
+  height: 22px;
+  margin: 0 auto;
+  position: relative;
+}

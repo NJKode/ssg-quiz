@@ -1,38 +1,51 @@
 {
 	"Hugo": {
-		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"]
+		"attributes": ["stubborn", "impatient", "popular", "strong", "proper"],
+		"description": "Opinionated and powerful, you often know what someone wants before they've even asked for it. And you're not afraid of telling them the right way to do something — anything."
 	},
 	"Jekyll": {
-		"attributes": ["wise", "flexible", "old-timey", "patient"]
+		"attributes": ["wise", "flexible", "old-timey", "patient"],
+		"description": "An old soul, you're wise and patient. If someone needs help, there's a very good chance you've already answered their question."
 	},
 	"Gatsby": {
-		"attributes": ["popular", "proud", "flashy", "ambitious", "imaginative"]
+		"attributes": ["popular", "proud", "flashy", "ambitious", "imaginative"],
+		"description": "Ambitious and proud, you're popular because of your imagination — if you can picture it, you can make it real."
 	},
 	"Next": {
-		"attributes": ["popular", "over-achiever", "friendly"]
+		"attributes": ["popular", "over-achiever", "friendly"],
+		"description": "Approachable and friendly, everyone loves you. You're something of an overachiever, but you still rely on your own framework of support."
 	},
 	"11ty": {
-		"attributes": ["likeable", "free-spirited", "humble"]
+		"attributes": ["likeable", "free-spirited", "humble"],
+		"description": "So hot right now. You're a free spirit, but still manage to stay humble. Is there anything you can't do?"
 	},
 	"Nuxt": {
-		"attributes": ["complex", "friendly", "loyal"]
+		"attributes": ["complex", "friendly", "loyal"],
+		"description": "You're complex, and take a while to open up, but once you're comfortable, you're an open book. You're utterly loyal to your friends, but you quite like to remain a mystery."
 	},
 	"Docusaurus": {
-		"attributes": ["nerdy", "introverted", "nurturing"]
+		"attributes": ["nerdy", "introverted", "nurturing"],
+		"description": "Something of an introvert, you always find time to nurture others and help them become their best selves. You'd rather spend time thinking than doing, but that doesn't mean you're standoffish — just that you know it's important to know. You know?"
 	},
 	"SvelteKit": {
-		"attributes": ["confident", "unconventional", "courageous"]
+		"attributes": ["confident", "unconventional", "courageous"],
+		"description": "Brash and effervescent, you enjoy the fact that you're a little — or a lot — different to the others. No matter how tall or short you are, it takes courage to stand out from the crowd. "
 	},
 	"MetalSmith": {
-		"attributes": ["flexible", "people-pleaser", "grungy"]
+		"attributes": ["flexible", "people-pleaser", "grungy"],
+		"description": "You're simple, but you're not simple. Somehow you've managed to mix a bit of greyscale grunge and some serious people-pleasing flexibility: you're a logician who likes to rock out!"
 	},
 	"Sphinx": {
-		"attributes": ["nerdy", "industrious", "investigative"]
+		"attributes": ["nerdy", "industrious", "investigative"],
+		"description": "Work, work, work — it's all you ever seem to do! The meaning of life, for you, is to find out new information and share it with other hyper-focused individuals. "
 	},
 	"Tome": {
-		"attributes": ["overlooked", "unconventional"]
+		"attributes": ["overlooked", "unconventional"],
+		"description": "Like a long-forgotten book that's slipped to the back of the shelf, you're often overlooked. But that doesn't mean you don't contain multitudes — your outlook on life is unconventional, and you're perfectly happy just working away in the background."
+
 	},
 	"Middleman": {
-		"attributes": ["overlooked", "old-timey", "supportive"]
+		"attributes": ["overlooked", "old-timey", "supportive"],
+		"description": "You've been around for a while, haven't you? But just because someone might have forgotten about you, that doesn't mean you've forgotten about them! You remain supportive to the end."
 	}
 }

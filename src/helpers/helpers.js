@@ -11,11 +11,14 @@ const helpers = {
 		})
 
 		// find max score
-		const result = Object.keys(finalScore).reduce((acc, curr) => {
+		const finalSSG = Object.keys(finalScore).reduce((acc, curr) => {
 			return finalScore[curr] > (finalScore[acc] || 0) ? curr : acc
 		}, '')
 
-		return result;
+		return {
+			result: finalSSG,
+			description: ssgs[finalSSG].description
+		};
 	}
 };
 
