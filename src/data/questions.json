@@ -3,29 +3,669 @@
 		{
 			"questionText": "Your friends invite you out for drinks on a Friday night, what do you do?",
 			"answers": {
-				"a": {
+				"A": {
 					"answerText": "Of course! As long as you choose the bar",
 					"attributes": {
-						"friendly": 1,
-						"stubborn": -1
+						"complex": 1,
+						"stubborn": 1,
+						"flexible": -1
 					}
 				},
-				"b": {
+				"B": {
 					"answerText": "You had other plans but sure, you can adapt",
 					"attributes": {
-						"flexible": 1
+						"flexible": 1,
+						"complex": -1
 					}
 				},
-				"c": {
+				"C": {
 					"answerText": "What friends, I have no friends",
 					"attributes": {
-						"individual": 1
+						"friendly": -1,
+						"introverted": 1
 					}
 				}
 			}
 		},
 		{
-
+			"questionText": "Netflix is down (scandal!) and you only have 3 movies on your hard drive, which one do you watch?",
+			"answers": {
+				"A": {
+					"answerText": "Guardians of the Galaxy",
+					"attributes": {
+						"powerful": 1,
+						"likeable": 1,
+						"imaginitive": 1,
+						"stubborn": -1
+					}
+				},
+				"B": {
+					"answerText": "Eternal Sunshine of the Spotless Mind",
+					"attributes": {
+						"introverted": 1,
+						"unconventional": 1,
+						"complex": 1,
+						"ambitous": 1,
+						"popular": -1
+					}
+				},
+				"C": {
+					"answerText": "Happy Gilmore",
+					"attributes": {
+						"popular": 1,
+						"friendly": 1,
+						"introverted": -1,
+						"complex": -1,
+						"ambitious": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "If you see a tortoise flipped over on its back, its belly baking in the hot sun, what do you do?",
+			"answers": {
+				"A": {
+					"answerText": "Run away — tortoises are scary!",
+					"attributes": {
+						"friendly": -1,
+						"supportive": -1,
+						"impatient": 1
+					}
+				},
+				"B": {
+					"answerText": "You turn it right way up and go on your way, secure in the knowledge you've done the right thing.",
+					"attributes": {
+						"supportive": 1,
+						"wise": 1,
+						"friendly": 1,
+						"stubborn": -1
+					}
+				},
+				"C": {
+					"answerText": "You grab it and take it home with you. Free pets FTW!",
+					"attributes": {
+						"overachiever": 1,
+						"imaginative": 1,
+						"ambitious": 1,
+						"wise": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Your house is on fire! What object do you take with you?",
+			"answers": {
+				"A": {
+					"answerText": "Something meaningful.",
+					"attributes": {
+						"introverted": 1,
+						"proper": 1,
+						"wise": 1,
+						"impatient": -1
+					}
+				},
+				"B": {
+					"answerText": "Something useful.",
+					"attributes": {
+						"over-achiever": 1,
+						"courageous": 1,
+						"industrious": 1,
+						"likeable": -1
+					}
+				},
+				"C": {
+					"answerText": "Nothing. You're the important thing.",
+					"attributes": {
+						"stubborn": 1,
+						"impatient": 1,
+						"something-to-prove": 1,
+						"proper": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Are you:",
+			"answers": {
+				"A": {
+					"answerText": "A dog person",
+					"attributes": {
+						"popular": 1,
+						"friendly": 1
+					}
+				},
+				"B": {
+					"answerText": "A cat person",
+					"attributes": {
+						"introverted": 1,
+						"stubborn": 1,
+						"friendly": -1
+					}
+				},
+				"C": {
+					"answerText": "A parrot on your shoulder person",
+					"attributes": {
+						"imaginative": 1,
+						"unconventional": 1,
+						"popular": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "What are you hungry for, right now?",
+			"answers": {
+				"A": {
+					"answerText": "Dim sum",
+					"attributes": {
+						"flexible": 1,
+						"over-achiever": -1
+					}
+				},
+				"B": {
+					"answerText": "Salad",
+					"attributes": {
+						"something-to-prove": 1,
+						"popular": -1
+					}
+				},
+				"C": {
+					"answerText": "Carb-on-carb!",
+					"attributes": {
+						"popular": 1,
+						"wise": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "What's your favourite board game?",
+			"answers": {
+				"A": {
+					"answerText": "Monopoly",
+					"attributes": {
+						"popular": 1,
+						"flexible": 1,
+						"over-achiever": -1
+					}
+				},
+				"B": {
+					"answerText": "Ticket to Ride",
+					"attributes": {
+						"nerdy": 1,
+						"flexible": -1
+					}
+				},
+				"C": {
+					"answerText": "Chess is the only board game that counts",
+					"attributes": {
+						"old-soul": 1,
+						"complex": 1,
+						"loyal": 1,
+						"flexible": -1,
+						"popular": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Choose a pop star:",
+			"answers": {
+				"A": {
+					"answerText": "Avril Lavigne",
+					"attributes": {
+						"unconventional": 1,
+						"something-to-prove": 1,
+						"friendly": -1,
+						"flexible": -1
+					}
+				},
+				"B": {
+					"answerText": "Britney Spears",
+					"attributes": {
+						"free-spirited": 1,
+						"wise": -1
+					}
+				},
+				"C": {
+					"answerText": "Ariana Grande",
+					"attributes": {
+						"popular": 1,
+						"hot": 1,
+						"old-soul": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Team Edward or Team Jacob?",
+			"answers": {
+				"A": {
+					"answerText": "Vamp Champ!",
+					"attributes": {
+						"old-soul": 1,
+						"hot": -1
+					}
+				},
+				"B": {
+					"answerText": "Were-meanttobetogether-wolf",
+					"attributes": {
+						"grungy": 1
+					}
+				},
+				"C": {
+					"answerText": "Neither",
+					"attributes": {
+						"stubborn": 1,
+						"popular": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Are there really 10 types of people in the world?",
+			"answers": {
+				"A": {
+					"answerText": "Yes",
+					"attributes": {
+						"nerdy": 1,
+						"friendly": -1
+					}
+				},
+				"B": {
+					"answerText": "No",
+					"attributes": {
+						"wise": 1,
+						"nerdy": -1
+					}
+				},
+				"C": {
+					"answerText": "Maybe?",
+					"attributes": {
+						"people-pleaser": 1,
+						"wise": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Someone next to you raises their hand with the sign of the beast. Do you:",
+			"answers": {
+				"A": {
+					"answerText": "Start headbanging, and throw the horns right back!",
+					"attributes": {
+						"grungy": 1,
+						"nerdy": -1
+					}
+				},
+				"B": {
+					"answerText": "Back away slowly, without making eye contact.",
+					"attributes": {
+						"nerdy": 1,
+						"friendly": -1
+					}
+				},
+				"C": {
+					"answerText": "Smile and nod. Just smile and nod",
+					"attributes": {
+						"friendly": 1,
+						"investigative": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "What's your favourite fantasy genre?",
+			"answers": {
+				"A": {
+					"answerText": "Epic! Give me all the lore",
+					"attributes": {
+						"industrious": 1,
+						"wise": 1,
+						"loyal": 1
+					}
+				},
+				"B": {
+					"answerText": "Grimdark. I'm not happy unless everyone else is unhappy",
+					"attributes": {
+						"unconventional": 1,
+						"friendly": -1
+					}
+				},
+				"C": {
+					"answerText": "Unicorn-centric. Sweetness and light, please",
+					"attributes": {
+						"supportive": 1,
+						"imaginative": 1,
+						"stubborn": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "In school you were:",
+			"answers": {
+				"A": {
+					"answerText": "The popular kid. Everyone loved you",
+					"attributes": {
+						"popular": 1,
+						"friendly": 1,
+						"unconventional": -1
+					}
+				},
+				"B": {
+					"answerText": "The goth child. The future is dark.",
+					"attributes": {
+						"unconventional": 1,
+						"free-spirited": 1,
+						"friendly": -1,
+						"flexible": -1
+					}
+				},
+				"C": {
+					"answerText": "The overachiever. There's no time to waste on nonsense.",
+					"attributes": {
+						"nerdy": 1,
+						"overachiever": 1,
+						"something-to-prove": 1,
+						"flexible": -1,
+						"friendly": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Which one is your favourite cheese:",
+			"answers": {
+				"A": {
+					"answerText": "Camembert",
+					"attributes": {
+						"popular": 1,
+						"invisible": -1
+					}
+				},
+				"B": {
+					"answerText": "Blue cheese",
+					"attributes": {
+						"proper": 1,
+						"courageous": 1,
+						"unconventional": 1,
+						"powerful": 1,
+						"popular": -1,
+						"people-pleaser": -1
+					}
+				},
+				"C": {
+					"answerText": "Vegan cheese",
+					"attributes": {
+						"hot": 1,
+						"unconventional": 1,
+						"popular": -1,
+						"impatient": -1
+					}
+				},
+				"D": {
+					"answerText": "Plain old cheddar",
+					"attributes": {
+						"old-soul": 1,
+						"loyal": 1,
+						"flexible": 1,
+						"friendly": 1,
+						"over-achiever": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Which one is your spirit animal?",
+			"answers": {
+				"A": {
+					"answerText": "Dinosaur",
+					"attributes": {
+						"introverted": 1,
+						"old-soul": 1,
+						"unconventional":  -1
+					}
+				},
+				"B": {
+					"answerText": "Possum",
+					"attributes": {
+						"free-spirited": 1,
+						"stubborn": -1,
+						"introverted": -1
+					}
+				},
+				"C": {
+					"answerText": "Gopher",
+					"attributes": {
+						"unconventional": 1,
+						"invisible": 1,
+						"friendly": -1,
+						"wise": -1
+					}
+				},
+				"D": {
+					"answerText": "Cat",
+					"attributes": {
+						"investigative": 1,
+						"loyal": -1,
+						"friendly": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "You can only take one book to a deserted island. You choose:",
+			"answers": {
+				"A": {
+					"answerText": "The Iliad",
+					"attributes": {
+						"old-soul": 1,
+						"introverted": 1,
+						"complex": 1,
+						"people-pleaser": -1,
+						"popular": 1
+					}
+				},
+				"B": {
+					"answerText": "Wilderness Survival for Dummies",
+					"attributes": {
+						"humble": 1,
+						"supportive": 1,
+						"flexible": -1,
+						"unconventional": -1
+					}
+				},
+				"C": {
+					"answerText": "Harry Potter and the Philosopher's Stone",
+					"attributes": {
+						"imaginative": 1,
+						"unconventional": 1,
+						"old-soul": -1,
+						"introverted": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "When deciding where to go for your holidays you:",
+			"answers": {
+				"A": {
+					"answerText": "Leave it to chance — unplanned holidays are the best type.",
+					"attributes": {
+						"courageous": 1,
+						"free-spirited": 1,
+						"unconventional": 1,
+						"impatient": 1,
+						"complex": -1,
+						"nerdy": -1,
+						"stubborn": -1
+					}
+				},
+				"B": {
+					"answerText": "Plan ahead, creating checklists, mood boards, and get your travel journal ready.",
+					"attributes": {
+						"stubborn": 1,
+						"something-to-prove": 1,
+						"over-achiever": 1,
+						"impatient": 1,
+						"invisible": -1,
+						"introverted": -1
+					}
+				},
+				"C": {
+					"answerText": "Go wherever your friends want to go",
+					"attributes": {
+						"invisible": 1,
+						"people-pleaser": 1,
+						"introverted": 1,
+						"flexible": 1,
+						"stubborn": -1,
+						"something-to-prove": -1,
+						"courageous": -1
+					}
+				},
+				"D": {
+					"answerText": "Holidays are for the weak. You work through your annual leave.",
+					"attributes": {
+						"industrious": 1,
+						"something-to-prove": 1,
+						"flexible": -1,
+						"free-spirited": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Your favourite quote is:",
+			"answers": {
+				"A": {
+					"answerText": "\"The only thing we have to fear is fear itself.\"",
+					"attributes": {
+						"ambitious": 1,
+						"unconventional": 1,
+						"wise": -1,
+						"nurturing": -1,
+						"invisible": -1
+					}
+				},
+				"B": {
+					"answerText": "\"Try not. Do, or do not. There is no try.\"",
+					"attributes": {
+						"industrious": 1,
+						"nerdy": 1,
+						"flexible": -1,
+						"invisible": -1
+					}
+				},
+				"C": {
+					"answerText": "\"Roads? Where we're going we don't need roads!\"",
+					"attributes": {
+						"free-spirited": 1,
+						"ambitious": 1,
+						"something-to-prove": 1,
+						"old-soul": -1,
+						"loyal": -1
+					}
+				},
+				"D": {
+					"answerText": "\"To live is to risk it all; otherwise you’re just an inert chunk of randomly assembled molecules drifting wherever the universe blows you.\"",
+					"attributes": {
+						"courageous": 1,
+						"popular": 1,
+						"ambitious": 1,
+						"impatient": 1,
+						"complex": 1,
+						"hot": -1,
+						"invisible": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "The best sitcom of all time is:",
+			"answers": {
+				"A": {
+					"answerText": "Friends",
+					"attributes": {
+						"people-pleaser": 1,
+						"friendly": 1,
+						"supportive": 1,
+						"introverted": -1,
+						"grungy": -1
+					}
+				},
+				"B": {
+					"answerText": "Seinfeld",
+					"attributes": {
+						"old-soul": 1,
+						"popular": 1,
+						"powerful": 1,
+						"investigative": 1,
+						"complex": -1,
+						"nurturing": -1
+					}
+				},
+				"C": {
+					"answerText": "Parks and Recreation",
+					"attributes": {
+						"unconventional": 1,
+						"hot": 1,
+						"invisible": -1,
+						"proud": -1
+					}
+				},
+				"D": {
+					"answerText": "I only watch documentaries",
+					"attributes": {
+						"nerdy": 1,
+						"introverted": 1,
+						"courageous": -1,
+						"popular": -1
+					}
+				}
+			}
+		},
+		{
+			"questionText": "Rock, paper, or scissors?",
+			"answers": {
+				"A": {
+					"answerText": "Rock",
+					"attributes": {
+						"stubborn": 1,
+						"flexible": -1
+					}
+				},
+				"B": {
+					"answerText": "Paper",
+					"attributes": {
+						"flexible": 1,
+						"stubborn": -1
+					}
+				},
+				"C": {
+					"answerText": "Scissors",
+					"attributes": {
+						"free-spirited": 1,
+						"introverted": -1
+					}
+				},
+				"D": {
+					"answerText": "Lizard",
+					"attributes": {
+						"complex": 1,
+						"likeable": -1
+					}
+				},
+				"E": {
+					"answerText": "Spock",
+					"attributes": {
+						"supportive": 1,
+						"impatient": -1
+					}
+				}
+			}
 		}
 	]
 }
+
