@@ -35,7 +35,7 @@ header {
 }
 
 .processbar-fill {
-  width: 155px;
+  width: var(--process);
   height: 22px;
   background: #363636;
   border-radius: 10px;
