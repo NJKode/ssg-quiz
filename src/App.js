@@ -57,6 +57,8 @@ function App() {
           <QNA
             updateAnswer={updateAnswer}
             question={question.questions[questionNum]}
+            questionNum={questionNum}
+            questionMax={questionMax}
           />
         </>
       )}
