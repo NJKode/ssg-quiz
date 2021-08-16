@@ -52,7 +52,7 @@ function App() {
       {questionNum === -1 && (
         <PageModule
           title="Which SSG are you?"
-          description='Since the dawn of time, humans have wondered, "Which Static Site Generator do my personality traits most closely resemble?". Today, you will find the answer to that question.'
+          description='Since the dawn of time, humans have wondered, "Which Static Site Generator do my personality traits most closely resemble?" Today, you will find the answer to that question.'
           buttons={button}
         />
       )}
