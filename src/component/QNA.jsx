@@ -24,7 +24,7 @@ function QNA({ updateAnswer, question, questionNum, questionMax }) {
         {questionNum + 1 <= questionMax ? questionNum + 1 : questionMax} of{" "}
         {questionMax}
       </div>
-      <div className="QA-question">{question.questionText}</div>
+      <div className="QA-question title">{question.questionText}</div>
       <div>{answers}</div>
     </div>
   );

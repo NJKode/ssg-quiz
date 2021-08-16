@@ -2,9 +2,15 @@
   font-family: "TT Norms Pro";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 150%;
   color: #000000;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 header {
@@ -18,25 +24,24 @@ header {
   text-align: center;
 }
 
+.module-text {
+  max-width: 720px;
+  width: 60%;
+  margin: auto;
+}
+
 .module-title {
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  text-align: center;
   margin: 67px auto 0 auto;
 }
 
 .module-description {
-  font-size: 20px;
-  line-height: 150%;
-  text-align: center;
+  margin: 36px auto;
   letter-spacing: 0.05em;
   color: #424141;
   opacity: 0.8;
-  margin: 36px auto;
 }
 
-.title {
+.header-title {
   text-align: center;
   padding: 53px 0 18px 0;
   font-size: 24px;
@@ -44,14 +49,15 @@ header {
 }
 
 .processbar {
-  width: 503px;
+  max-width: 510px;
+  width: 90%;
   height: 22px;
   margin: 0 auto;
   position: relative;
 }
 
 .processbar-whole {
-  width: 503px;
+  width: 100%;
   height: 22px;
   background: #e5e5e5;
   border-radius: 10px;
@@ -67,27 +73,23 @@ header {
 }
 
 .processbar-text {
-  width: 503px;
-  margin: 0 auto;
+  max-width: 510px;
   font-size: 16px;
   line-height: 19px;
 }
 
 .QA {
-  width: 503px;
+  max-width: 510px;
+  width: 90%;
   margin: 60px auto 0px auto;
 }
 
 .QA-question {
   margin: 6px 0 52px 0px;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
 }
 
 .QA-item {
-  width: 503px;
+  width: 100%;
   height: 111px;
   background: rgba(196, 196, 196, 0.3);
   border-radius: 8px;
@@ -95,8 +97,6 @@ header {
   border: none;
   text-align: left;
   margin-bottom: 26px;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .QA-item:hover {
@@ -125,14 +125,13 @@ header {
 }
 
 .button {
-  width: 292px;
+  max-width: 290px;
+  width: 100%;
   height: 56px;
   background: #0500ff;
   border-radius: 8px;
   border: none;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
   text-align: center;
   letter-spacing: 0.05em;
   color: #ffffff;

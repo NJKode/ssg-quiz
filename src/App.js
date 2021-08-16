@@ -1,20 +1,21 @@
 import { useState } from "react";
 import "./App.css";
 import QNA from "./component/QNA";
-import Header from "./component/Header";
-import Results from "./component/Results";
 import PageModule from "./component/PageModule";
 import Button from "./component/Button";
+import ProcessBar from "./component/ProcessBar";
 
 import question from "./data/questions.json";
+const { calculateFinalScore } = require("./helpers/helpers");
 
 function App() {
   const questionMax = question.questions.length;
   const [questionNum, setQuestionNum] = useState(-1);
   const [userAttributes, setUserAttributes] = useState({});
+  const [finalResult, setResult] = useState({});
 
   function updateAnswer(option) {
-    // Do some calculationg, update the character
+    // Update the current user attributes
     const questionAttributes =
       question.questions[questionNum].answers[option].attributes;
 
@@ -31,6 +32,12 @@ function App() {
       ...userAttributesCopy,
     });
 
+    // Check if that is the final question, if so, calculate result
+    if (questionNum === questionMax - 1) {
+      const result = calculateFinalScore(userAttributes);
+      setResult(result);
+    }
+
     setQuestionNum(questionNum + 1);
   }
 
@@ -44,7 +51,6 @@ function App() {
     <div className="app">
       {questionNum === -1 && (
         <PageModule
-          pageWidth={window.innerWidth}
           title="Welcome to 'Which ssg are you' test"
           description="There are 20 questions. Let's figure out which ssg are you"
           buttons={button}
@@ -53,7 +59,11 @@ function App() {
 
       {questionNum >= 0 && questionNum < questionMax && (
         <>
-          <Header questionNum={questionNum} questionMax={questionMax} />
+          <header>
+            <div className="header-title">Which ssg are you?</div>
+            <ProcessBar questionNum={questionNum} questionMax={questionMax} />
+          </header>
+
           <QNA
             updateAnswer={updateAnswer}
             question={question.questions[questionNum]}
@@ -64,7 +74,11 @@ function App() {
       )}
 
       {questionNum === questionMax && (
-        <Results userAttributes={userAttributes} />
+        <PageModule
+          title={`You're ${finalResult.result}!`}
+          description={finalResult.description}
+          buttons=""
+        />
       )}
     </div>
   );
