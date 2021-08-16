@@ -51,8 +51,8 @@ function App() {
     <div className="app">
       {questionNum === -1 && (
         <PageModule
-          title="What SSG are you?"
-          description='Since the dawn of time, humans have wondered, "What Static Site Generator do my personality traits most closely resemble?". Today, you will find the answer to that question.'
+          title="Which SSG are you?"
+          description='Since the dawn of time, humans have wondered, "Which Static Site Generator do my personality traits most closely resemble?". Today, you will find the answer to that question.'
           buttons={button}
         />
       )}
