@@ -61,7 +61,7 @@ function App() {
         <>
           <header>
             <div className="header-title">Which ssg are you?</div>
-            <ProcessBar questionNum={questionNum} questionMax={questionMax} />
+            <ProcessBar questionNum={questionNum + 1} questionMax={questionMax} />
           </header>
 
           <QNA
