@@ -5,7 +5,9 @@ function QNA({ updateAnswer, question, questionNum, questionMax }) {
   const answers = options.map((option) => {
     return (
       <button
-        onClick={() => updateAnswer(option)}
+        onClick={() => {
+          setTimeout(() => updateAnswer(option), 100)
+        } }
         key={option}
         className="QA-item"
       >
