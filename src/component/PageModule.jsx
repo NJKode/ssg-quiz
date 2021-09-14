@@ -3,9 +3,10 @@ import React from "react";
 function PageModule({ title, description, buttons }) {
   return (
     <div className="module-page">
-      <div class="header">
-        <div class="header-balloon"></div>
-        <div class="header-image"></div>
+      <div className="header">
+        <div className="header-balloon"></div>
+        <div className="header-image">
+        </div>
       </div>
 
       <div className="module-text">
