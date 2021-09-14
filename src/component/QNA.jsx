@@ -9,7 +9,7 @@ function QNA({ updateAnswer, question, questionNum, questionMax }) {
           setTimeout(() => updateAnswer(option), 100)
         } }
         key={option}
-        className="QA-item"
+        className="QA-item button button--secondary"
       >
         <div className="QA-item-option">{option}</div>
         <div className="QA-item-answer">
