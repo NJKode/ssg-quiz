@@ -15,7 +15,7 @@
 		"attributes": ["popular", "over-achiever", "friendly"],
 		"description": "Approachable and friendly, everyone loves you. You're something of an overachiever, but you still rely on your own framework of support."
 	},
-	"11ty": {
+	"Eleventy": {
 		"attributes": ["likeable", "free-spirited", "humble"],
 		"description": "So hot right now. You're a free spirit, but still manage to stay humble. Is there anything you can't do?"
 	},

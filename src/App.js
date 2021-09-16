@@ -7,9 +7,14 @@ import ProcessBar from "./component/ProcessBar";
 
 import question from "./data/questions.json";
 const { calculateFinalScore } = require("./helpers/helpers");
+const ctaLinks = {
+  Hugo: "https://cloudcannon.com/hugo-cms/",
+  Jekyll: "https://cloudcannon.com/jekyll-cms/",
+  Eleventy: "https://cloudcannon.com/eleventy-cms/"
+}
 
 function App() {
-  const questionMax = question.questions.length;
+  const questionMax = 2; //question.questions.length;
   const [questionNum, setQuestionNum] = useState(-1);
   const [userAttributes, setUserAttributes] = useState({});
   const [finalResult, setResult] = useState({});
@@ -45,6 +50,19 @@ function App() {
     setQuestionNum(0);
   }
 
+  function getCta() {
+    if(finalResult.result && Object.keys(ctaLinks).includes(finalResult.result)) {
+      return {
+        ctaLink: ctaLinks[finalResult.result],
+        ctaText: `Try our ${finalResult.result} CMS for free`,
+      }
+    }  
+    return {
+      ctaLink: "https://cloudcannon.com/git-cms/",
+      ctaText: "Try our Git-based CMS for free",
+    };
+  }
+
   const button = <Button text="Get started" func={getStart} />;
 
   return (
@@ -54,6 +72,7 @@ function App() {
           title="Which SSG are you?"
           description='Since the dawn of time, humans have wondered, "Which Static Site Generator do my personality traits most closely resemble?" Today, you will find the answer to that question.'
           buttons={button}
+          cta={false}
         />
       )}
 
@@ -77,7 +96,8 @@ function App() {
         <PageModule
           title={`You're ${finalResult.result}!`}
           description={finalResult.description}
-          buttons=""
+          buttons={false}
+          cta={getCta()}
         />
       )}
     </div>
