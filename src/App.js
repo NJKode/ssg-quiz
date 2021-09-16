@@ -14,7 +14,7 @@ const ctaLinks = {
 }
 
 function App() {
-  const questionMax = 2; //question.questions.length;
+  const questionMax = question.questions.length;
   const [questionNum, setQuestionNum] = useState(-1);
   const [userAttributes, setUserAttributes] = useState({});
   const [finalResult, setResult] = useState({});
