@@ -202,9 +202,6 @@ header {
 }
 
 .button--title-screen {
-  max-width: 290px;
-  width: 100%;
-  height: 56px;
   background: var(--cc-blue);
   border-radius: 8px;
   border: none;
@@ -213,6 +210,10 @@ header {
   letter-spacing: 0.05em;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  display: inline-block;
 }
 
 @media (hover: hover) {
