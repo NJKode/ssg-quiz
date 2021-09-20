@@ -183,6 +183,7 @@ header {
 .QA-item-answer {
   flex: 1 0;
   text-align: left;
+  hyphens: auto;
 }
 
 .button {

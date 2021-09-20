@@ -4,6 +4,7 @@ import QNA from "./component/QNA";
 import PageModule from "./component/PageModule";
 import Button from "./component/Button";
 import ProcessBar from "./component/ProcessBar";
+import ShareLinks from "./component/ShareLinks";
 
 import question from "./data/questions.json";
 const { calculateFinalScore } = require("./helpers/helpers");
@@ -14,7 +15,7 @@ const ctaLinks = {
 }
 
 function App() {
-  const questionMax = question.questions.length;
+  const questionMax =  question.questions.length;
   const [questionNum, setQuestionNum] = useState(-1);
   const [userAttributes, setUserAttributes] = useState({});
   const [finalResult, setResult] = useState({});
@@ -93,12 +94,17 @@ function App() {
       )}
 
       {questionNum === questionMax && (
-        <PageModule
-          title={`You're ${finalResult.result}!`}
-          description={finalResult.description}
-          buttons={false}
-          cta={getCta()}
-        />
+        <>
+          <PageModule
+            title={`You're ${finalResult.result}!`}
+            description={finalResult.description}
+            buttons={false}
+            cta={getCta()}
+          />
+          <ShareLinks
+            ssg={finalResult.result}
+          />
+        </>
       )}
     </div>
   );
