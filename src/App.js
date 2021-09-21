@@ -80,7 +80,7 @@ function App() {
       {questionNum >= 0 && questionNum < questionMax && (
         <>
           <header>
-            <div className="header-title">Which ssg are you?</div>
+            <div className="header-title">Which SSG are you?</div>
             <ProcessBar questionNum={questionNum + 1} questionMax={questionMax} />
           </header>
 
