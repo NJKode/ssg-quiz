@@ -1,11 +1,12 @@
 import React from "react";
 
 function ShareLinks(ssg) {
-  const text = encodeURI(`I'm a ${ssg.ssg} SSG! Do your want to know which SSG are you?`);
+  const text = `I'm a ${ssg.ssg} SSG! Do your want to know which SSG are you?`;
+  document.querySelector('meta[name="description"]').setAttribute("content", text);
   const baseUrl = window.location;
   const facebookUrl = `https://www.facebook.com/sharer.php?u=${baseUrl}`;
   const twitterUrl = `https://twitter.com/share?url=${baseUrl}&text=${text}`;
-  const linkedinUrl = `http://www.linkedin.com/shareArticle?mini=true&url=${baseUrl}&summary=${text}`;
+  const linkedinUrl = `http://www.linkedin.com/shareArticle?mini=true&url=${baseUrl}`;
   return(
     <div className="c-social-block__social-icons">
             
