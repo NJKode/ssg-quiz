@@ -2,7 +2,7 @@ import React from "react";
 
 function Button({ text, func }) {
   return (
-    <button className="button button--title-screen button--primary" onClick={func}>
+    <button className="button button--title-screen cc-helper__button--light" onClick={func}>
       {text}
     </button>
   );
