@@ -9,10 +9,10 @@ function QNA({ updateAnswer, question, questionNum, questionMax }) {
           setTimeout(() => updateAnswer(option), 100)
         } }
         key={option}
-        className="QA-item button button--secondary"
+        className="qa-item button button--secondary"
       >
-        <div className="QA-item-option">{option}</div>
-        <div className="QA-item-answer">
+        <div className="qa-item-option">{option}</div>
+        <div className="qa-item-answer">
           {question.answers[option].answerText}
         </div>
       </button>
@@ -20,13 +20,13 @@ function QNA({ updateAnswer, question, questionNum, questionMax }) {
   });
 
   return (
-    <div className="QA">
+    <div className="qa">
       <div className="processbar-text">
         Question{" "}
         {questionNum + 1 <= questionMax ? questionNum + 1 : questionMax} of{" "}
         {questionMax}
       </div>
-      <div className="QA-question cc-helper__h3">{question.questionText}</div>
+      <div className="qa-question cc-helper__h3">{question.questionText}</div>
       <div>{answers}</div>
     </div>
   );

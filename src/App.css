@@ -131,20 +131,20 @@ header {
   color: var(--cc-blue)
 }
 
-.QA {
+.qa {
   max-width: 510px;
   margin: 40px auto 0;
   padding: 0 50px;
 }
 
-.QA-question {
+.qa-question {
   margin-bottom: 40px;
   font-size: 24px;
   line-height: 36px;
 }
 
 @media screen and (max-width: 610px) {
-  .QA-question {
+  .qa-question {
     font-size: 20px;
     line-height: 27px;
   }
@@ -159,7 +159,7 @@ header {
   }
 }
 
-.QA-item {
+.qa-item {
   padding: 20px;
   width: 100%;
   border-radius: 8px;
@@ -172,7 +172,7 @@ header {
   cursor: pointer;
 }
 
-.QA-item-option {
+.qa-item-option {
   display: inline-block;
   font-size: 24px;
   line-height: 24px;
@@ -180,7 +180,7 @@ header {
   vertical-align: middle;
 }
 
-.QA-item-answer {
+.qa-item-answer {
   flex: 1 0;
   text-align: left;
   hyphens: auto;
@@ -231,7 +231,7 @@ header {
   }
 }
 
-.QA-item:active {
+.qa-item:active {
   background: var(--cc-blue);
   color: white;
   transition-duration: 0.2s;
