@@ -56,11 +56,13 @@ function App() {
       return {
         ctaLink: ctaLinks[finalResult.result],
         ctaText: `Try our ${finalResult.result} CMS for free`,
+        ssg: finalResult.result,
       }
     }  
     return {
       ctaLink: "https://cloudcannon.com/git-cms/",
       ctaText: "Try our Git-based CMS for free",
+      ssg: finalResult.result,
     };
   }
 
